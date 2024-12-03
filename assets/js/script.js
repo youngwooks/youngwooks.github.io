@@ -127,6 +127,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+
 const projectItems = document.querySelectorAll(".project-item");
 const modalContent = document.querySelector("[data-modal-content]");
 const modalImgElement = modalContent.querySelector("img");
@@ -146,7 +147,7 @@ const openModal = function (project) {
 
 projectItems.forEach(item => {
   item.querySelector("a").addEventListener("click", function (e) {
-    e.preventDefault();
+    e.preventDefault(); 
     openModal(item); 
   });
 });
